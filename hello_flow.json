@@ -1,0 +1,20 @@
+{
+  "containerDefinitions": [
+    {
+      "cpu": 0,
+      "environment": [
+        {
+          "name": "PREFECT__CONTEXT__IMAGE",
+          "value": "prefecthq/prefect:0.14.21"
+        }
+      ],
+      "image": "prefecthq/prefect:0.14.21",
+      "essential": true,
+      "name": "flow"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": "2048",
+  "networkMode": "awsvpc",
+  "cpu": "1024"
+}
